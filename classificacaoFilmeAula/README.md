@@ -1,4 +1,4 @@
-# Quartas de Programação - Classificação de Filme - feito por mim
+# Quartas de Programação - Classificação de Filme (Aula)
 
 Projeto em Node.js com estrutura simples de `src/` e `test/`.
 
@@ -25,5 +25,4 @@ npm test
 
 ## Observações
 
-- O projeto usa `"type": "module"` no `package.json`, então arquivos ES Modules são suportados.
 - Adicione seus scripts de execução e testes conforme o projeto crescer.
