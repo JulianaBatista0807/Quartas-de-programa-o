@@ -1,0 +1,15 @@
+{
+  "name": "pedidoscafeteriaaula",
+  "version": "1.0.0",
+  "description": "cria um contador de café",
+  "license": "ISC",
+  "author": "",
+  "type": "modules",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "mocha": "^11.7.5"
+  }
+}
