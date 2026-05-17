@@ -1,5 +1,5 @@
-import {validarAcessoCinema} from "../src/"
-import assert from 'node:test'
+import {validarAcessoCinema} from "../src/controleAcessoAula.js"
+import assert from 'node:assert'
 
 describe('Testando funções de acesso ao cinema', function (){
     

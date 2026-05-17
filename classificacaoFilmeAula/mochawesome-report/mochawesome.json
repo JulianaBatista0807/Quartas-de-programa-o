@@ -1,0 +1,195 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 6,
+    "passes": 6,
+    "pending": 0,
+    "failures": 0,
+    "start": "2026-05-16T23:06:13.824Z",
+    "end": "2026-05-16T23:06:13.831Z",
+    "duration": 7,
+    "testsRegistered": 6,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "fd19b03f-4a85-4726-ab11-5d2fe0f1190e",
+      "title": "",
+      "fullFile": "C:\\Projetos\\quartas-de-promacao\\Quartas-de-programa-o\\classificacaoFilmeAula\\test\\controleAcessoAula.test.js",
+      "file": "\\test\\controleAcessoAula.test.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d77599da-fcdf-4093-83d8-298f3b14ce95",
+          "title": "Testando funções de acesso ao cinema",
+          "fullFile": "C:\\Projetos\\quartas-de-promacao\\Quartas-de-programa-o\\classificacaoFilmeAula\\test\\controleAcessoAula.test.js",
+          "file": "\\test\\controleAcessoAula.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Idade deve ser positiva",
+              "fullTitle": "Testando funções de acesso ao cinema Idade deve ser positiva",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "let respostaAcesso = validarAcessoCinema(-1, \"L\")\nassert.equal(respostaAcesso, \"Não Permitido\")",
+              "err": {},
+              "uuid": "d24d77e0-4c9c-4a02-b626-4ba67a1cd245",
+              "parentUUID": "d77599da-fcdf-4093-83d8-298f3b14ce95",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Classificação livre deve ser permitida para todas as idades",
+              "fullTitle": "Testando funções de acesso ao cinema Classificação livre deve ser permitida para todas as idades",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "let respostaAcesso = validarAcessoCinema(10, \"L\")\nassert.equal(respostaAcesso, \"Permitido\")",
+              "err": {},
+              "uuid": "68875db9-a38b-41b7-a4e5-1be759ae756e",
+              "parentUUID": "d77599da-fcdf-4093-83d8-298f3b14ce95",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Se idade for nula deve ser Não Permitido",
+              "fullTitle": "Testando funções de acesso ao cinema Se idade for nula deve ser Não Permitido",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "let respostaAcesso = validarAcessoCinema(null, \"L\")\nassert.equal(respostaAcesso, \"Não Permitido\")",
+              "err": {},
+              "uuid": "9a569760-cc7e-47b3-86f4-57e01294f548",
+              "parentUUID": "d77599da-fcdf-4093-83d8-298f3b14ce95",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Se classificação for nula deve ser Não Permitido",
+              "fullTitle": "Testando funções de acesso ao cinema Se classificação for nula deve ser Não Permitido",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "let respostaAcesso = validarAcessoCinema(15, null)\nassert.equal(respostaAcesso, \"Não Permitido\")",
+              "err": {},
+              "uuid": "1603f24a-adef-43dd-8890-a77e336ce3b0",
+              "parentUUID": "d77599da-fcdf-4093-83d8-298f3b14ce95",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verificar que quando uma idade é inferior a classificação retorna Não Permitido",
+              "fullTitle": "Testando funções de acesso ao cinema Verificar que quando uma idade é inferior a classificação retorna Não Permitido",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "let respostaAcesso = validarAcessoCinema(10, \"16\")\nassert.equal(respostaAcesso, \"Não Permitido\")",
+              "err": {},
+              "uuid": "098bb8d4-8a1b-481f-90a7-6a96d4e42568",
+              "parentUUID": "d77599da-fcdf-4093-83d8-298f3b14ce95",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verificar que quando uma idade é igual a classificação retorna Permitido",
+              "fullTitle": "Testando funções de acesso ao cinema Verificar que quando uma idade é igual a classificação retorna Permitido",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "let respostaAcesso = validarAcessoCinema(16, \"16\")\nassert.equal(respostaAcesso, \"Permitido\")",
+              "err": {},
+              "uuid": "48be6141-fe88-4bb4-a5e0-687a9c8ae655",
+              "parentUUID": "d77599da-fcdf-4093-83d8-298f3b14ce95",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "d24d77e0-4c9c-4a02-b626-4ba67a1cd245",
+            "68875db9-a38b-41b7-a4e5-1be759ae756e",
+            "9a569760-cc7e-47b3-86f4-57e01294f548",
+            "1603f24a-adef-43dd-8890-a77e336ce3b0",
+            "098bb8d4-8a1b-481f-90a7-6a96d4e42568",
+            "48be6141-fe88-4bb4-a5e0-687a9c8ae655"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "11.7.5"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.3.2"
+    }
+  }
+}

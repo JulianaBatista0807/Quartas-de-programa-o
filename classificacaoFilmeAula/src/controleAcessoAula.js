@@ -2,7 +2,7 @@ const naoPermitido = "Não Permitido"
 const permitido = "Permitido"
 
 export function validarAcessoCinema(idade, classificacao) {
-    if (idade < 0 || idade === null) {
+    if (idade < 0 || idade === null || classificacao === null) {
         return naoPermitido
     }
     if (classificacao === "L") {
@@ -10,5 +10,5 @@ export function validarAcessoCinema(idade, classificacao) {
     } else if(idade < Number(classificacao)) {
         return naoPermitido
     }
-   
+    return permitido
 }
