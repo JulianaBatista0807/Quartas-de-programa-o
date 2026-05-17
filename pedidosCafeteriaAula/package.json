@@ -4,10 +4,10 @@
   "description": "cria um contador de café",
   "license": "ISC",
   "author": "",
-  "type": "modules",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm mocha"
   },
   "dependencies": {
     "mocha": "^11.7.5"

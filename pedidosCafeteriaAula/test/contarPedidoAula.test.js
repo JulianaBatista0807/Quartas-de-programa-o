@@ -1,4 +1,4 @@
-import { contabilizarQuantidadeDeCafe } from '../src/contarPedidoAulas.js';
+import { contabilizarQuantidadeDeCafe, contabilizarQuantidadeDeItens } from '../src/contarPedidoAula.js';
 import assert from 'node:assert'
 
 describe('Testes de gestão de cafeteria', function(){
@@ -42,6 +42,33 @@ describe('Testes de gestão de cafeteria', function(){
         const quantidadeDeCafes = contabilizarQuantidadeDeCafe(ListaPedidos)
 
         assert.equal(retornoEsperado, quantidadeDeCafes)
+
+    })
+
+    it('TC 4 - Retornar umalista de pedidos vazia', function(){
+        const ListaPedidos = []
+        const retornoEsperado = 0
+
+        const quantidadeDeCafes = contabilizarQuantidadeDeCafe(ListaPedidos)
+
+        assert.equal(retornoEsperado, quantidadeDeCafes)
+
+    })
+
+
+    it('TC 5 - Filtrar por um item específico na lista', function(){
+        const ListaPedidos = [
+            {nome: "café", valor: 4.00},
+            {nome: "bolo de cenoura", valor: 12.00},
+            {nome: "café com leite", valor: 5.00},
+            {nome: "café", valor: 4.00}
+        ]
+        const itemPesquisado = "bolo de cenoura"
+        const resutadoEsperado = 1
+
+        const quantidadedeItem = contabilizarQuantidadeDeItens(itemPesquisado, ListaPedidos)
+
+        assert.equal(resutadoEsperado, quantidadedeItem)
 
     })
 
